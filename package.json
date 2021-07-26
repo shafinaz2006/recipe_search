@@ -1,6 +1,6 @@
 {
     "name": "recipe_search",
-    "homepage": "https://github.com/shafinaz2006/recipe_search",
+    "homepage": "https://shafinaz2006.github.com/recipe_search",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
