@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shafinaz2006/recipe_search/static/css/main.90bbde6f.chunk.css",
+    "main.js": "/shafinaz2006/recipe_search/static/js/main.3a4dafbd.chunk.js",
+    "main.js.map": "/shafinaz2006/recipe_search/static/js/main.3a4dafbd.chunk.js.map",
+    "runtime-main.js": "/shafinaz2006/recipe_search/static/js/runtime-main.7fbed646.js",
+    "runtime-main.js.map": "/shafinaz2006/recipe_search/static/js/runtime-main.7fbed646.js.map",
+    "static/js/2.85a236ec.chunk.js": "/shafinaz2006/recipe_search/static/js/2.85a236ec.chunk.js",
+    "static/js/2.85a236ec.chunk.js.map": "/shafinaz2006/recipe_search/static/js/2.85a236ec.chunk.js.map",
+    "static/js/3.a41340b5.chunk.js": "/shafinaz2006/recipe_search/static/js/3.a41340b5.chunk.js",
+    "static/js/3.a41340b5.chunk.js.map": "/shafinaz2006/recipe_search/static/js/3.a41340b5.chunk.js.map",
+    "index.html": "/shafinaz2006/recipe_search/index.html",
+    "static/css/main.90bbde6f.chunk.css.map": "/shafinaz2006/recipe_search/static/css/main.90bbde6f.chunk.css.map",
+    "static/js/2.85a236ec.chunk.js.LICENSE.txt": "/shafinaz2006/recipe_search/static/js/2.85a236ec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fbed646.js",
+    "static/js/2.85a236ec.chunk.js",
+    "static/css/main.90bbde6f.chunk.css",
+    "static/js/main.3a4dafbd.chunk.js"
+  ]
+}
