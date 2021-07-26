@@ -15,6 +15,7 @@ function App() {
   }
   const [recipeFound, setRecipeFound] = useState<Recipe[]>([]);
   const [recipeSearch, setRecipeSearch] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const [display, setDisplay] = useState(false);
  
   const getSearchString = (event: ChangeEvent<HTMLInputElement>): void  =>{
@@ -23,6 +24,7 @@ function App() {
   const searchRecipe = (event: FormEvent<HTMLFormElement>): void =>{
     event.preventDefault();
     // console.log(recipeSearch);
+    setIsLoading(true);
     axios
       .get(`https://api.edamam.com/api/recipes/v2?type=public&q=${recipeSearch}&app_id=202b54b2&app_key=aacb28831d67e34e10029db642233e04%09&imageSize=REGULAR`)
       .then(response => setRecipeFound(response.data.hits))
@@ -31,6 +33,7 @@ function App() {
 
   useEffect(() =>{
     setDisplay(true);
+    setIsLoading(false);
   }, [recipeFound]);
 
   return (
@@ -41,6 +44,7 @@ function App() {
         <input type='text'  id='search' name='recipeSearch' onChange={getSearchString} value={recipeSearch} placeholder='query'/>
         <button >Search</button>
       </form>
+      {isLoading? <p> Loading....</p> : ''}
       <div className='allRecipes'>
       {display? recipeFound.map((recipe:any, i) => 
         <section key={i} className='recipe'>
