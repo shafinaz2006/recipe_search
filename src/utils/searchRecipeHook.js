@@ -4,7 +4,6 @@ import axios from 'axios';
 function SearchRecipeHook() {
   const [recipeSearch, setRecipeSearch] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [display, setDisplay] = useState(false);
   const [recipeFound, setRecipeFound] = useState([]);
 
   // input change event:
@@ -25,11 +24,10 @@ function SearchRecipeHook() {
   }
 
   useEffect(() => {
-    setDisplay(true);
     setIsLoading(false);
   }, [recipeFound]);
 
-  return {recipeFound, recipeSearch, isLoading, display, getSearchString, searchRecipe}
+  return {recipeFound, recipeSearch, isLoading, getSearchString, searchRecipe}
 }
 
 export default SearchRecipeHook;

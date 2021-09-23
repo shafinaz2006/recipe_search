@@ -9,6 +9,7 @@ function App() {
          isLoading, 
          getSearchString, 
          searchRecipe } = SearchRecipeHook();
+
   return (
     <main className="App">
       <h1> Recipe Search App</h1>
