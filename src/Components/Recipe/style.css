@@ -1,0 +1,77 @@
+.recipe {
+    margin: 0.25rem;
+    border: 1px solid lightgray;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.recipeImage {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.recipeLabel {
+    font-weight: bold;
+    text-align: center;
+}
+
+.recipeCalorie {
+    color: blue;
+    text-align: center;
+}
+
+.recipeIngredient {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+}
+
+.recipeIngLabel {
+    text-decoration: underline;
+}
+
+.recipeIngredient p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.recipeDetails {
+    align-self: flex-end;
+    background-color: lightsalmon;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+
+/* .recipeIng {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.recipeIng li {
+    width: 90%;
+    align-self: flex-start;
+} */
+
+@media screen and (min-width: 700px) {
+    .recipe {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recipe {
+        width: 30%;
+    }
+}
