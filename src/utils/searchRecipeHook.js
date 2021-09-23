@@ -4,7 +4,7 @@ import axios from 'axios';
 function SearchRecipeHook() {
   const [recipeSearch, setRecipeSearch] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [recipeFound, setRecipeFound] = useState([]);
+  const [recipeFound, setRecipeFound] = useState();
 
   // input change event:
 
