@@ -10,8 +10,9 @@ const Recipe = ({recipe}: {recipe:any}) =>{
         <p className='recipeIngLabel'>Ingredients:</p>
         <ul>
         {recipe.ingredientLines? 
-          recipe.ingredientLines.map((ing:any, j:number) => 
-            <li key={j}> {ing}</li>): ''}
+          recipe.ingredientLines.map((ingredient:any, index:number) => 
+            <li key={index}>{ingredient}</li>): ''
+        }
         </ul>
       </div>
       <a href={recipe.url} target='__blank' className='recipeDetails'> Details </a>

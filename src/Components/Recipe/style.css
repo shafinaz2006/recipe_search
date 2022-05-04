@@ -4,7 +4,6 @@
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: flex-start;
     width: 100%;
 }
@@ -51,18 +50,6 @@
     margin: 1rem;
     text-decoration: none;
 }
-
-
-/* .recipeIng {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.recipeIng li {
-    width: 90%;
-    align-self: flex-start;
-} */
 
 @media screen and (min-width: 700px) {
     .recipe {

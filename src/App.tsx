@@ -12,8 +12,10 @@ function App() {
 
   return (
     <main className="App">
-      <h1> Recipe Search App</h1>
-      <SearchForm searchRecipe={searchRecipe} getSearchString={getSearchString} recipeSearch={recipeSearch} />
+      <h1>Recipe Search App</h1>
+      <SearchForm searchRecipe={searchRecipe} 
+                  getSearchString={getSearchString} 
+                  recipeSearch={recipeSearch} />
       {isLoading? <p> Loading....</p> : ''}
       {recipeFound? <AllRecipes recipeFound={recipeFound}/> : '' }
     </main>

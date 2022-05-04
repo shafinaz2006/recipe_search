@@ -27,7 +27,7 @@ function SearchRecipeHook() {
     setIsLoading(false);
   }, [recipeFound]);
 
-  return {recipeFound, recipeSearch, isLoading, getSearchString, searchRecipe}
+  return { recipeFound, recipeSearch, isLoading, getSearchString, searchRecipe }
 }
 
 export default SearchRecipeHook;
